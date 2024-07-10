@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixzor - Craft Your Voxel Worlds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background-color: #007BFF;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .hero button {
+            background-color: #0056b3;
+            border: none;
+            padding: 1rem 2rem;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .section {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .roadmap {
+            background-color: #fff;
+        }
+        .roadmap ul {
+            list-style: none;
+            padding-left: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .roadmap ul li {
+            margin: 1rem 0;
+        }
+    
+        
+        .roadmap ul li ul {
+            margin: 0.5rem 0 0.5rem 1.5rem;
+            font-size: 0.9rem;
+            list-style: disc;
+        }
+        .roadmap ul li b {
+            font-size: 1.1rem;
+        }
+        .current-work ul {            
+            padding-left: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            margin: 0.5rem 0 0.5rem 1.5rem;
+            font-size: 0.9rem;
+            list-style: disc;
+        }
+        
+        .cta {
+            background-color: #333;
+            color: white;
+        }
+        .cta button {
+            background-color: #ff5722;
+            border: none;
+            padding: 1rem 2rem;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        function showDownloadMessage() {
+            alert('The Pixzor program is still under development. Please check back later for updates.');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="logo.png" alt="Pixzor Logo" width="230" height="227">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#download" onclick="showDownloadMessage()">Download</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="mailto:pixzor.com@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container">
+        <h2>Craft Your Voxel Worlds: Introducing Pixzor</h2>
+        <p>
+            Pixzor is a free, open-source voxel editor developed in C++ that empowers you to create detailed 3D environments,<br>
+            landscapes, and objects using an intuitive voxel-based approach.
+        </p>
+        <p>
+            <a href="https://github.com/jimy1974/pixzor" target="_blank">View the Source Code on GitHub</a>
+        </p>
+        <button onclick="window.location.href='#demo-video'">Watch the Demo Video</button>
+    </div>
+</section>
+
+<section class="roadmap section" id="roadmap">
+    <div class="container">
+        <h2>Future Roadmap</h2>
+        <ul>
+            <li><b>1. Core Voxel Editing Tools and Basic UI</b>
+                <ul>
+                    <li>Basic voxel placement and deletion</li>
+                    <li>Simple color and texture application</li>
+                    <li>Sparse voxel octree data structure for larger voxel worlds</li>
+                    <li>Fundamental UI framework (window management, basic widgets)</li>
+                    <li>File operations UI (New, Open, Save, Save As)</li>
+                </ul>
+            </li>
+            <li><b>2. Basic Scripting System and Script Editor</b>
+                <ul>
+                    <li>Integration of Lua scripting language</li>
+                    <li>Basic API for voxel manipulation and world interaction</li>
+                    <li>Script management system (load, unload, reload)</li>
+                    <li>Simple script editor with syntax highlighting</li>
+                </ul>
+            </li>
+            <li><b>3. Simple Timeline and Animation UI</b>
+                <ul>
+                    <li>Basic keyframe-based animation editor</li>
+                    <li>Simple camera controls and animation</li>
+                    <li>Timeline UI with basic playback controls</li>
+                </ul>
+            </li>
+            <li><b>4. Terrain Sculpting Tools and UI</b>
+                <ul>
+                    <li>Height-based terrain editing</li>
+                    <li>Simple brush system</li>
+                    <li>Basic vegetation instancing</li>
+                    <li>UI for terrain tool selection and settings</li>
+                </ul>
+            </li>
+            <li><b>5. Advanced Scripting, Procedural Generation, and UI Enhancements</b>
+                <ul>
+                    <li>Extended API for complex voxel manipulations</li>
+                    <li>Procedural structure generation (buildings, landscapes)</li>
+                    <li>Basic physics simulations</li>
+                    <li>Enhanced script editor with debugging capabilities</li>
+                    <li>UI for managing and applying procedural generation scripts</li>
+                </ul>
+            </li>
+            <li><b>6. Enhanced Animation, Dynamics, and UI</b>
+                <ul>
+                    <li>Advanced keyframing and animation blending</li>
+                    <li>Particle systems</li>
+                    <li>Basic rigid body dynamics</li>
+                    <li>Improved timeline UI with advanced animation controls</li>
+                    <li>UI for particle system and physics settings</li>
+                </ul>
+            </li>
+            <li><b>7. Advanced Features and Comprehensive UI (Long-term goals)</b>
+                <ul>
+                    <li>Terrain erosion simulations</li>
+                    <li>Organic shaping with deformation brushes</li>
+                    <li>Character rigging with inverse kinematics</li>
+                    <li>AI-assisted rendering and motion stylization</li>
+                    <li>Comprehensive, customizable UI system</li>
+                    <li>User preference and project settings UI</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="cta section">
+    <div class="container">
+        <h2>Support Pixzor</h2>
+        <p>Your donations will help accelerate development. Pixzor will always be free, but your support makes a big difference.</p>
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="EZCKRV8H8ZR4A" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+    </div>
+</section>
+
+<section class="demo-video section" id="demo-video">
+    <div class="container">
+        <h2>Demo Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YKeW2hKUveI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+    
+<section class="roadmap section" >
+    <div class="container">
+        <h2>Current Development Focus</h2>
+        <p>I'm currently working on improving Pixzor's performance and laying the groundwork for advanced features:</p>
+        <ul>
+            <li>1. Optimizing UI responsiveness for a smoother user experience</li>
+            <li>2. Implementing an octree system for more efficient voxel management</li>
+            <li>3. Developing a robust texture system to enhance visual quality</li>
+           
+        </ul>
+    </div>
+</section>    
+
+<footer>
+    <div class="container">
+        <p>Contact: <a href="mailto:pixzor.com@gmail.com">pixzor.com@gmail.com</a></p>
+        <p>&copy; 2024 Pixzor</p>
+    </div>
+</footer>
+
+</body>
+</html>
